@@ -58,7 +58,7 @@ public final class StyleCode extends ConsoleCode {
         StringBuilder builder = new StringBuilder(ESCAPE_CODE);
         builder.append("[");
         if (this.effect != null) {
-            builder.append(this.effect.getCode()).append(this.background == null ? "" : ";");
+            builder.append(this.effect.getCode()).append(this.background == null || this.front == null ? "" : ";");
         }
         if (this.background != null) {
             builder.append(this.background.getBackgroundCode());
