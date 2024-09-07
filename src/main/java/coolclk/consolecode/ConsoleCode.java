@@ -11,7 +11,7 @@ import coolclk.consolecode.builder.StyleCode;
  */
 @SuppressWarnings("unused")
 public abstract class ConsoleCode {
-    protected static int ESCAPE_CODE = '\033';
+    protected static String ESCAPE_CODE = "\033";
 
     /**
      * Build a code about styles.
