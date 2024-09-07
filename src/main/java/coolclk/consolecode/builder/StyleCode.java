@@ -76,7 +76,6 @@ public final class StyleCode extends ConsoleCode {
             } else if (this.front instanceof RGBColor) {
                 builder.append(";5;").append(((RGBColor) this.front).getColorR()).append(";").append(((RGBColor) this.front).getColorG()).append(";").append(((RGBColor) this.front).getColorB());
             }
-            builder.append(this.front == null ? "" : ";");
         }
         return builder.append("m").toString();
     }
